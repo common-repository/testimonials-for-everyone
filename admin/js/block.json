@@ -1,0 +1,159 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "wp-testimonials-for-everyone/testimonials",
+  "title": "Testimonials For Everyone",
+  "category": "for-everyone-category",
+  "icon": "admin-comments",
+  "description": "A block to display testimonials.",
+  "supports": {
+    "html": true
+  },
+  "attributes": {
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": "p"
+    },
+    "author": {
+      "type": "string",
+      "source": "text",
+      "selector": ".author"
+    },
+    "company": {
+      "type": "string",
+      "source": "text",
+      "selector": ".company"
+    },
+    "link": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "href",
+      "selector": ".website-link"
+    },
+    "rating": {
+      "type": "number",
+      "default": 5
+    },
+    "starColor": {
+      "type": "string",
+      "default": "#ffcc00"
+    },
+    "authorColor": {
+      "type": "string",
+      "default": "#222222"
+    },
+    "authorFontSize": {
+      "type": "number",
+      "default": 20
+    },
+    "companyFontSize": {
+      "type": "number",
+      "default": 15
+    },
+    "testimonialFontSize": {
+      "type": "number",
+      "default": 22
+    },
+    "companyColor": {
+      "type": "string",
+      "default": "#222222"
+    },
+    "contentColor": {
+      "type": "string",
+      "default": "#222222"
+    },
+    "paddingTop": {
+      "type": "number",
+      "default": 15
+    },
+    "paddingBottom": {
+      "type": "number",
+      "default": 15
+    },
+    "paddingLeft": {
+      "type": "number",
+      "default": 15
+    },
+    "paddingRight": {
+      "type": "number",
+      "default": 15
+    },
+    "starSize": {
+      "type": "number",
+      "default": 20
+    },
+    "starAligment": {
+      "type": "string",
+      "default": "left"
+    },
+    "showImage": {
+      "type": "boolean",
+      "default": true
+    },
+    "showCompany": {
+      "type": "boolean",
+      "default": true
+    },
+    "showLink": {
+      "type": "boolean",
+      "default": true
+    },
+    "showRating": {
+      "type": "boolean",
+      "default": true
+    },
+    "image_url": {
+      "type": "string",
+      "default": ""
+    },
+    "imageSize": {
+      "type": "number",
+      "default": 100
+    },
+    "imageRounded": {
+      "type": "boolean",
+      "default": false
+    },
+    "imageAlign": {
+      "type": "string",
+      "default": "left"
+    },
+    "authorAlign": {
+      "type": "string",
+      "default": "left"
+    },
+    "companyAlign": {
+      "type": "string",
+      "default": "left"
+    },
+    "contentAlign": {
+      "type": "string",
+      "default": "left"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "borderSize": {
+      "type": "number",
+      "default": 1
+    },
+    "testimonialsNumberInGrid": {
+      "type": "number",
+      "default": 2
+    },
+    "borderColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "borderRadius": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "textdomain": "testimonials-for-everyone",
+  "editorScript": "file:./dist/block.js",
+  "editorStyle": "file:/../css/editor.css",
+  "style": "file:/../css/style.css"
+}
